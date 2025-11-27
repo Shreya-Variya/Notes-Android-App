@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="data"
+            type="com.example.mynotesapp2.Data" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtUseId"
+            android:textSize="23sp"
+            android:text="@{String.valueOf(data.userId)}"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtId"
+            android:textSize="23sp"
+            android:text="@{String.valueOf(data.id)}"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle"
+            android:textSize="23sp"
+            android:text="@{String.valueOf(data.title)}"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBody"
+            android:textSize="23sp"
+            android:text="@{String.valueOf(data.body)}"
+            tools:ignore="MissingConstraints" />
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:id="@+id/hrLineView"-->
+<!--            android:background="@android:color/darker_gray"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            tools:ignore="MissingConstraints" />-->
+
+    </LinearLayout>
+</layout>
